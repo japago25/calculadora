@@ -17,10 +17,37 @@ body{
 
 .calculadora{
     display: grid;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: 100px 100px 100px 80px;
     grid-template-rows: repeat(5, 60px);
     background-color: white;
     padding: 3px;
-    border: solid black 2px;
+    border: solid black 3px;
     box-shadow: 10px 10px 3px 5px #00000033;
+}
+
+button{
+    cursor: pointer;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    background-color: #18A925;
+    font-size: 22px;
+}
+
+button:active{
+    background-color: #0D5113;
+}
+
+.display{
+    grid-column: span 3;
+    border: solid black 3px;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#valor{
+    font-size: 30px;
+    color: black;
 }
