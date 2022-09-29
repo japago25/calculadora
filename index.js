@@ -11,3 +11,14 @@ botonesNumeros.forEach(boton => {
 botonesOperadores.forEach(boton => {
     boton.addEventListener('click', () => display.computar(boton.value))
 });
+
+
+const fecha = document.getElementById('fecha');
+const hora = document.getElementById('hora');
+
+var today = new Date();
+ 
+fecha.textContent = today.toLocaleDateString();
+hora.textContent = today.toLocaleTimeString();
+
+
