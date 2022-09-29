@@ -1,3 +1,13 @@
 const displayValor = document.getElementById('valor');
+const botonesNumeros = document.querySelectorAll('.numero');
+const botonesOperadores = document.querySelectorAll('.operador');
 
-const botonesNumeros = document.querySelectorAll('.numeros');
+const display = new Display(displayValor);
+
+botonesNumeros.forEach(boton => {
+    boton.addEventListener('click', () => display.agregarNumero(boton.innerHTML));
+});
+
+botonesOperadores.forEach(boton => {
+    
+})
